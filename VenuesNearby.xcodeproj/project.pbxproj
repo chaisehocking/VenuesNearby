@@ -1,0 +1,699 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		09047A430A6A458C63C181A8 /* Pods_VenuesNearbyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D2E1B5BCE285D6A086C8428 /* Pods_VenuesNearbyTests.framework */; };
+		AC9306A49322DF072D8703A0 /* Pods_VenuesNearby.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32A8C9D1E0C486C9CD03F488 /* Pods_VenuesNearby.framework */; };
+		FB0BF6801F2C1E90007CC808 /* ModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0BF67F1F2C1E90007CC808 /* ModelTests.swift */; };
+		FB46F9E11F2C777900C1E23D /* Tip.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB46F9E01F2C777900C1E23D /* Tip.swift */; };
+		FB46F9E31F2C784B00C1E23D /* Like.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB46F9E21F2C784B00C1E23D /* Like.swift */; };
+		FB46F9E51F2DBC3F00C1E23D /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB46F9E41F2DBC3F00C1E23D /* Photo.swift */; };
+		FB46F9E81F2DBCE300C1E23D /* Photo+URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB46F9E71F2DBCE300C1E23D /* Photo+URL.swift */; };
+		FB46F9EA1F2DC3D700C1E23D /* PhotoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB46F9E91F2DC3D700C1E23D /* PhotoTests.swift */; };
+		FB46F9EE1F2E1B8F00C1E23D /* Hours.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB46F9ED1F2E1B8F00C1E23D /* Hours.swift */; };
+		FB46F9F01F2F232300C1E23D /* Venue+Name.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB46F9EF1F2F232300C1E23D /* Venue+Name.swift */; };
+		FB46F9F21F2F279F00C1E23D /* VenueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB46F9F11F2F279F00C1E23D /* VenueTests.swift */; };
+		FB69CA881F6012B800AB56F8 /* VenueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB69CA871F6012B800AB56F8 /* VenueViewController.swift */; };
+		FB78E9BE1F27476C005A0EC0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB78E9BD1F27476C005A0EC0 /* AppDelegate.swift */; };
+		FB78E9C01F27476C005A0EC0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB78E9BF1F27476C005A0EC0 /* ViewController.swift */; };
+		FB78E9C31F27476C005A0EC0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB78E9C11F27476C005A0EC0 /* Main.storyboard */; };
+		FB78E9C51F27476C005A0EC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB78E9C41F27476C005A0EC0 /* Assets.xcassets */; };
+		FB78E9C81F27476C005A0EC0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB78E9C61F27476C005A0EC0 /* LaunchScreen.storyboard */; };
+		FB78E9D31F27476C005A0EC0 /* VenuesNearbyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB78E9D21F27476C005A0EC0 /* VenuesNearbyTests.swift */; };
+		FB78E9E01F276749005A0EC0 /* SearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB78E9DF1F276749005A0EC0 /* SearchController.swift */; };
+		FB78E9E41F27772E005A0EC0 /* FourSquareService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB78E9E31F27772E005A0EC0 /* FourSquareService.swift */; };
+		FB78E9E61F278296005A0EC0 /* Venue.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB78E9E51F278296005A0EC0 /* Venue.swift */; };
+		FB78E9E81F28946C005A0EC0 /* HTTPResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB78E9E71F28946C005A0EC0 /* HTTPResponse.swift */; };
+		FB78E9EB1F289DF9005A0EC0 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB78E9EA1F289DF9005A0EC0 /* Response.swift */; };
+		FB78E9EE1F28B06A005A0EC0 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB78E9ED1F28B06A005A0EC0 /* Model.swift */; };
+		FB78E9F01F28B2C9005A0EC0 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB78E9EF1F28B2C9005A0EC0 /* Group.swift */; };
+		FB78E9F21F28B745005A0EC0 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB78E9F11F28B745005A0EC0 /* Item.swift */; };
+		FB78E9F61F2A0CFB005A0EC0 /* VenueCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB78E9F51F2A0CFB005A0EC0 /* VenueCell.swift */; };
+		FB78E9F81F2A13C5005A0EC0 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB78E9F71F2A13C5005A0EC0 /* Location.swift */; };
+		FB78E9FA1F2A149B005A0EC0 /* Location+Formatted.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB78E9F91F2A149B005A0EC0 /* Location+Formatted.swift */; };
+		FB7BD4451F6A0F0B004FEBF4 /* PhotoCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7BD4421F6A0F0B004FEBF4 /* PhotoCollection.swift */; };
+		FB7BD4461F6A0F0B004FEBF4 /* PhotoGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7BD4431F6A0F0B004FEBF4 /* PhotoGroup.swift */; };
+		FB7BD4471F6A0F0B004FEBF4 /* PhtotoCollection+Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7BD4441F6A0F0B004FEBF4 /* PhtotoCollection+Photo.swift */; };
+		FB872E5A1F2C3DF300B5AFBA /* LocationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB872E591F2C3DF300B5AFBA /* LocationTests.swift */; };
+		FB872E5C1F2C3FBC00B5AFBA /* SearchControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB872E5B1F2C3FBC00B5AFBA /* SearchControllerTests.swift */; };
+		FB872E5E1F2C518A00B5AFBA /* LocationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB872E5D1F2C518A00B5AFBA /* LocationController.swift */; };
+		FB872E601F2C520000B5AFBA /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB872E5F1F2C520000B5AFBA /* CoreLocation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FB78E9CF1F27476C005A0EC0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FB78E9B21F27476C005A0EC0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FB78E9B91F27476C005A0EC0;
+			remoteInfo = VenuesNearby;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0387E9FD26055DE21D97950B /* Pods-VenuesNearbyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VenuesNearbyTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VenuesNearbyTests/Pods-VenuesNearbyTests.debug.xcconfig"; sourceTree = "<group>"; };
+		1DE021B83BF876658684B921 /* Pods-VenuesNearbyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VenuesNearbyTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-VenuesNearbyTests/Pods-VenuesNearbyTests.release.xcconfig"; sourceTree = "<group>"; };
+		32A8C9D1E0C486C9CD03F488 /* Pods_VenuesNearby.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VenuesNearby.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7307E695BC357E7BB1CD4AD6 /* Pods-VenuesNearby.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VenuesNearby.release.xcconfig"; path = "Pods/Target Support Files/Pods-VenuesNearby/Pods-VenuesNearby.release.xcconfig"; sourceTree = "<group>"; };
+		8D2E1B5BCE285D6A086C8428 /* Pods_VenuesNearbyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VenuesNearbyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		91C2323B4EC4FBE55BB01600 /* Pods-VenuesNearby.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VenuesNearby.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VenuesNearby/Pods-VenuesNearby.debug.xcconfig"; sourceTree = "<group>"; };
+		FB0BF67F1F2C1E90007CC808 /* ModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelTests.swift; sourceTree = "<group>"; };
+		FB46F9E01F2C777900C1E23D /* Tip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tip.swift; sourceTree = "<group>"; };
+		FB46F9E21F2C784B00C1E23D /* Like.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Like.swift; sourceTree = "<group>"; };
+		FB46F9E41F2DBC3F00C1E23D /* Photo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		FB46F9E71F2DBCE300C1E23D /* Photo+URL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Photo+URL.swift"; sourceTree = "<group>"; };
+		FB46F9E91F2DC3D700C1E23D /* PhotoTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoTests.swift; sourceTree = "<group>"; };
+		FB46F9ED1F2E1B8F00C1E23D /* Hours.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hours.swift; sourceTree = "<group>"; };
+		FB46F9EF1F2F232300C1E23D /* Venue+Name.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Venue+Name.swift"; sourceTree = "<group>"; };
+		FB46F9F11F2F279F00C1E23D /* VenueTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VenueTests.swift; sourceTree = "<group>"; };
+		FB69CA871F6012B800AB56F8 /* VenueViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VenueViewController.swift; sourceTree = "<group>"; };
+		FB78E9BA1F27476C005A0EC0 /* VenuesNearby.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VenuesNearby.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB78E9BD1F27476C005A0EC0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FB78E9BF1F27476C005A0EC0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FB78E9C21F27476C005A0EC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FB78E9C41F27476C005A0EC0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FB78E9C71F27476C005A0EC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FB78E9C91F27476C005A0EC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB78E9CE1F27476C005A0EC0 /* VenuesNearbyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VenuesNearbyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB78E9D21F27476C005A0EC0 /* VenuesNearbyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenuesNearbyTests.swift; sourceTree = "<group>"; };
+		FB78E9D41F27476C005A0EC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB78E9DF1F276749005A0EC0 /* SearchController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchController.swift; sourceTree = "<group>"; };
+		FB78E9E31F27772E005A0EC0 /* FourSquareService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FourSquareService.swift; sourceTree = "<group>"; };
+		FB78E9E51F278296005A0EC0 /* Venue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Venue.swift; sourceTree = "<group>"; };
+		FB78E9E71F28946C005A0EC0 /* HTTPResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPResponse.swift; sourceTree = "<group>"; };
+		FB78E9EA1F289DF9005A0EC0 /* Response.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		FB78E9ED1F28B06A005A0EC0 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		FB78E9EF1F28B2C9005A0EC0 /* Group.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
+		FB78E9F11F28B745005A0EC0 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		FB78E9F51F2A0CFB005A0EC0 /* VenueCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VenueCell.swift; sourceTree = "<group>"; };
+		FB78E9F71F2A13C5005A0EC0 /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		FB78E9F91F2A149B005A0EC0 /* Location+Formatted.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Location+Formatted.swift"; sourceTree = "<group>"; };
+		FB7BD4421F6A0F0B004FEBF4 /* PhotoCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCollection.swift; sourceTree = "<group>"; };
+		FB7BD4431F6A0F0B004FEBF4 /* PhotoGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoGroup.swift; sourceTree = "<group>"; };
+		FB7BD4441F6A0F0B004FEBF4 /* PhtotoCollection+Photo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PhtotoCollection+Photo.swift"; sourceTree = "<group>"; };
+		FB872E591F2C3DF300B5AFBA /* LocationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationTests.swift; sourceTree = "<group>"; };
+		FB872E5B1F2C3FBC00B5AFBA /* SearchControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchControllerTests.swift; sourceTree = "<group>"; };
+		FB872E5D1F2C518A00B5AFBA /* LocationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationController.swift; sourceTree = "<group>"; };
+		FB872E5F1F2C520000B5AFBA /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		FBE7F4051F582FDD00BAFB03 /* VenuesNearby.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = VenuesNearby.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FB78E9B71F27476C005A0EC0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB872E601F2C520000B5AFBA /* CoreLocation.framework in Frameworks */,
+				AC9306A49322DF072D8703A0 /* Pods_VenuesNearby.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB78E9CB1F27476C005A0EC0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09047A430A6A458C63C181A8 /* Pods_VenuesNearbyTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		865AEA341AFF41482521D969 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				91C2323B4EC4FBE55BB01600 /* Pods-VenuesNearby.debug.xcconfig */,
+				7307E695BC357E7BB1CD4AD6 /* Pods-VenuesNearby.release.xcconfig */,
+				0387E9FD26055DE21D97950B /* Pods-VenuesNearbyTests.debug.xcconfig */,
+				1DE021B83BF876658684B921 /* Pods-VenuesNearbyTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E5479912F2535A9B35606847 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FB872E5F1F2C520000B5AFBA /* CoreLocation.framework */,
+				32A8C9D1E0C486C9CD03F488 /* Pods_VenuesNearby.framework */,
+				8D2E1B5BCE285D6A086C8428 /* Pods_VenuesNearbyTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FB46F9E61F2DBCB800C1E23D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FB78E9F91F2A149B005A0EC0 /* Location+Formatted.swift */,
+				FB46F9E71F2DBCE300C1E23D /* Photo+URL.swift */,
+				FB46F9EF1F2F232300C1E23D /* Venue+Name.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		FB78E9B11F27476C005A0EC0 = {
+			isa = PBXGroup;
+			children = (
+				FB78E9BC1F27476C005A0EC0 /* VenuesNearby */,
+				FB78E9D11F27476C005A0EC0 /* VenuesNearbyTests */,
+				FB78E9BB1F27476C005A0EC0 /* Products */,
+				865AEA341AFF41482521D969 /* Pods */,
+				E5479912F2535A9B35606847 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FB78E9BB1F27476C005A0EC0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FB78E9BA1F27476C005A0EC0 /* VenuesNearby.app */,
+				FB78E9CE1F27476C005A0EC0 /* VenuesNearbyTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FB78E9BC1F27476C005A0EC0 /* VenuesNearby */ = {
+			isa = PBXGroup;
+			children = (
+				FBE7F4051F582FDD00BAFB03 /* VenuesNearby.entitlements */,
+				FB78E9E91F289DE8005A0EC0 /* Model */,
+				FB78E9BD1F27476C005A0EC0 /* AppDelegate.swift */,
+				FB78E9BF1F27476C005A0EC0 /* ViewController.swift */,
+				FB69CA871F6012B800AB56F8 /* VenueViewController.swift */,
+				FB78E9DF1F276749005A0EC0 /* SearchController.swift */,
+				FB872E5D1F2C518A00B5AFBA /* LocationController.swift */,
+				FB78E9E31F27772E005A0EC0 /* FourSquareService.swift */,
+				FB78E9F51F2A0CFB005A0EC0 /* VenueCell.swift */,
+				FB78E9C11F27476C005A0EC0 /* Main.storyboard */,
+				FB78E9C41F27476C005A0EC0 /* Assets.xcassets */,
+				FB78E9C61F27476C005A0EC0 /* LaunchScreen.storyboard */,
+				FB78E9C91F27476C005A0EC0 /* Info.plist */,
+			);
+			path = VenuesNearby;
+			sourceTree = "<group>";
+		};
+		FB78E9D11F27476C005A0EC0 /* VenuesNearbyTests */ = {
+			isa = PBXGroup;
+			children = (
+				FB78E9D21F27476C005A0EC0 /* VenuesNearbyTests.swift */,
+				FB872E5B1F2C3FBC00B5AFBA /* SearchControllerTests.swift */,
+				FB0BF67F1F2C1E90007CC808 /* ModelTests.swift */,
+				FB872E591F2C3DF300B5AFBA /* LocationTests.swift */,
+				FB46F9F11F2F279F00C1E23D /* VenueTests.swift */,
+				FB46F9E91F2DC3D700C1E23D /* PhotoTests.swift */,
+				FB78E9D41F27476C005A0EC0 /* Info.plist */,
+			);
+			name = VenuesNearbyTests;
+			path = VenuesNearbyTests;
+			sourceTree = "<group>";
+		};
+		FB78E9E91F289DE8005A0EC0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FB46F9E61F2DBCB800C1E23D /* Extensions */,
+				FB78E9ED1F28B06A005A0EC0 /* Model.swift */,
+				FB78E9F11F28B745005A0EC0 /* Item.swift */,
+				FB78E9E71F28946C005A0EC0 /* HTTPResponse.swift */,
+				FB78E9EA1F289DF9005A0EC0 /* Response.swift */,
+				FB7BD4421F6A0F0B004FEBF4 /* PhotoCollection.swift */,
+				FB7BD4431F6A0F0B004FEBF4 /* PhotoGroup.swift */,
+				FB7BD4441F6A0F0B004FEBF4 /* PhtotoCollection+Photo.swift */,
+				FB78E9EF1F28B2C9005A0EC0 /* Group.swift */,
+				FB78E9E51F278296005A0EC0 /* Venue.swift */,
+				FB78E9F71F2A13C5005A0EC0 /* Location.swift */,
+				FB46F9E01F2C777900C1E23D /* Tip.swift */,
+				FB46F9E41F2DBC3F00C1E23D /* Photo.swift */,
+				FB46F9E21F2C784B00C1E23D /* Like.swift */,
+				FB46F9ED1F2E1B8F00C1E23D /* Hours.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FB78E9B91F27476C005A0EC0 /* VenuesNearby */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB78E9D71F27476C005A0EC0 /* Build configuration list for PBXNativeTarget "VenuesNearby" */;
+			buildPhases = (
+				E13222469ED55B724A2FF1DC /* [CP] Check Pods Manifest.lock */,
+				FB78E9B61F27476C005A0EC0 /* Sources */,
+				FB78E9B71F27476C005A0EC0 /* Frameworks */,
+				FB78E9B81F27476C005A0EC0 /* Resources */,
+				8EBEF9AFC6A3D60EBC243ACE /* [CP] Embed Pods Frameworks */,
+				61D1387C6AA1E183398A9840 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VenuesNearby;
+			productName = VenuesNearby;
+			productReference = FB78E9BA1F27476C005A0EC0 /* VenuesNearby.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FB78E9CD1F27476C005A0EC0 /* VenuesNearbyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB78E9DA1F27476C005A0EC0 /* Build configuration list for PBXNativeTarget "VenuesNearbyTests" */;
+			buildPhases = (
+				2E899197D246E693A7AF9A84 /* [CP] Check Pods Manifest.lock */,
+				FB78E9CA1F27476C005A0EC0 /* Sources */,
+				FB78E9CB1F27476C005A0EC0 /* Frameworks */,
+				FB78E9CC1F27476C005A0EC0 /* Resources */,
+				1C93FE9ABA73DD8AC6DD3321 /* [CP] Embed Pods Frameworks */,
+				1C570EB67E489E2F74CF065A /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FB78E9D01F27476C005A0EC0 /* PBXTargetDependency */,
+			);
+			name = VenuesNearbyTests;
+			productName = VenuesNearbyTests;
+			productReference = FB78E9CE1F27476C005A0EC0 /* VenuesNearbyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FB78E9B21F27476C005A0EC0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = Chaise;
+				TargetAttributes = {
+					FB78E9B91F27476C005A0EC0 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = KADQL6585N;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.SafariKeychain = {
+								enabled = 1;
+							};
+						};
+					};
+					FB78E9CD1F27476C005A0EC0 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = FB78E9B91F27476C005A0EC0;
+					};
+				};
+			};
+			buildConfigurationList = FB78E9B51F27476C005A0EC0 /* Build configuration list for PBXProject "VenuesNearby" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FB78E9B11F27476C005A0EC0;
+			productRefGroup = FB78E9BB1F27476C005A0EC0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FB78E9B91F27476C005A0EC0 /* VenuesNearby */,
+				FB78E9CD1F27476C005A0EC0 /* VenuesNearbyTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FB78E9B81F27476C005A0EC0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB78E9C81F27476C005A0EC0 /* LaunchScreen.storyboard in Resources */,
+				FB78E9C51F27476C005A0EC0 /* Assets.xcassets in Resources */,
+				FB78E9C31F27476C005A0EC0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB78E9CC1F27476C005A0EC0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1C570EB67E489E2F74CF065A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VenuesNearbyTests/Pods-VenuesNearbyTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1C93FE9ABA73DD8AC6DD3321 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VenuesNearbyTests/Pods-VenuesNearbyTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2E899197D246E693A7AF9A84 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		61D1387C6AA1E183398A9840 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VenuesNearby/Pods-VenuesNearby-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8EBEF9AFC6A3D60EBC243ACE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VenuesNearby/Pods-VenuesNearby-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E13222469ED55B724A2FF1DC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FB78E9B61F27476C005A0EC0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB78E9F21F28B745005A0EC0 /* Item.swift in Sources */,
+				FB78E9F01F28B2C9005A0EC0 /* Group.swift in Sources */,
+				FB46F9EE1F2E1B8F00C1E23D /* Hours.swift in Sources */,
+				FB46F9E81F2DBCE300C1E23D /* Photo+URL.swift in Sources */,
+				FB78E9E41F27772E005A0EC0 /* FourSquareService.swift in Sources */,
+				FB78E9E61F278296005A0EC0 /* Venue.swift in Sources */,
+				FB78E9E81F28946C005A0EC0 /* HTTPResponse.swift in Sources */,
+				FB78E9C01F27476C005A0EC0 /* ViewController.swift in Sources */,
+				FB46F9F01F2F232300C1E23D /* Venue+Name.swift in Sources */,
+				FB7BD4461F6A0F0B004FEBF4 /* PhotoGroup.swift in Sources */,
+				FB78E9E01F276749005A0EC0 /* SearchController.swift in Sources */,
+				FB78E9F61F2A0CFB005A0EC0 /* VenueCell.swift in Sources */,
+				FB78E9FA1F2A149B005A0EC0 /* Location+Formatted.swift in Sources */,
+				FB78E9BE1F27476C005A0EC0 /* AppDelegate.swift in Sources */,
+				FB7BD4471F6A0F0B004FEBF4 /* PhtotoCollection+Photo.swift in Sources */,
+				FB46F9E51F2DBC3F00C1E23D /* Photo.swift in Sources */,
+				FB46F9E31F2C784B00C1E23D /* Like.swift in Sources */,
+				FB69CA881F6012B800AB56F8 /* VenueViewController.swift in Sources */,
+				FB872E5E1F2C518A00B5AFBA /* LocationController.swift in Sources */,
+				FB78E9EB1F289DF9005A0EC0 /* Response.swift in Sources */,
+				FB7BD4451F6A0F0B004FEBF4 /* PhotoCollection.swift in Sources */,
+				FB46F9E11F2C777900C1E23D /* Tip.swift in Sources */,
+				FB78E9F81F2A13C5005A0EC0 /* Location.swift in Sources */,
+				FB78E9EE1F28B06A005A0EC0 /* Model.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB78E9CA1F27476C005A0EC0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB78E9D31F27476C005A0EC0 /* VenuesNearbyTests.swift in Sources */,
+				FB872E5A1F2C3DF300B5AFBA /* LocationTests.swift in Sources */,
+				FB46F9EA1F2DC3D700C1E23D /* PhotoTests.swift in Sources */,
+				FB46F9F21F2F279F00C1E23D /* VenueTests.swift in Sources */,
+				FB0BF6801F2C1E90007CC808 /* ModelTests.swift in Sources */,
+				FB872E5C1F2C3FBC00B5AFBA /* SearchControllerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FB78E9D01F27476C005A0EC0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FB78E9B91F27476C005A0EC0 /* VenuesNearby */;
+			targetProxy = FB78E9CF1F27476C005A0EC0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FB78E9C11F27476C005A0EC0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FB78E9C21F27476C005A0EC0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FB78E9C61F27476C005A0EC0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FB78E9C71F27476C005A0EC0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FB78E9D51F27476C005A0EC0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FB78E9D61F27476C005A0EC0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FB78E9D81F27476C005A0EC0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 91C2323B4EC4FBE55BB01600 /* Pods-VenuesNearby.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = VenuesNearby/VenuesNearby.entitlements;
+				DEVELOPMENT_TEAM = KADQL6585N;
+				INFOPLIST_FILE = VenuesNearby/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shinetech.venuesnearby;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		FB78E9D91F27476C005A0EC0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7307E695BC357E7BB1CD4AD6 /* Pods-VenuesNearby.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = VenuesNearby/VenuesNearby.entitlements;
+				DEVELOPMENT_TEAM = KADQL6585N;
+				INFOPLIST_FILE = VenuesNearby/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shinetech.venuesnearby;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		FB78E9DB1F27476C005A0EC0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0387E9FD26055DE21D97950B /* Pods-VenuesNearbyTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = VenuesNearbyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Chaise.VenuesNearbyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VenuesNearby.app/VenuesNearby";
+			};
+			name = Debug;
+		};
+		FB78E9DC1F27476C005A0EC0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1DE021B83BF876658684B921 /* Pods-VenuesNearbyTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = VenuesNearbyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Chaise.VenuesNearbyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VenuesNearby.app/VenuesNearby";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FB78E9B51F27476C005A0EC0 /* Build configuration list for PBXProject "VenuesNearby" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB78E9D51F27476C005A0EC0 /* Debug */,
+				FB78E9D61F27476C005A0EC0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB78E9D71F27476C005A0EC0 /* Build configuration list for PBXNativeTarget "VenuesNearby" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB78E9D81F27476C005A0EC0 /* Debug */,
+				FB78E9D91F27476C005A0EC0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB78E9DA1F27476C005A0EC0 /* Build configuration list for PBXNativeTarget "VenuesNearbyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB78E9DB1F27476C005A0EC0 /* Debug */,
+				FB78E9DC1F27476C005A0EC0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FB78E9B21F27476C005A0EC0 /* Project object */;
+}
