@@ -1,0 +1,24 @@
+# OS generated files #
+######################
+.DS_Store?
+.DS_Store*
+ehthumbs.db
+Icon?
+Thumbs.db
+*.xccheckout
+
+*.swp
+*~.nib
+build/
+.xcodeproj/ !*.xcodeproj/project.pbxproj
+*.xcuserdatad
+xcuserdatad
+Documentation
+appledoc/*
+.idea
+# Podfile.lock
+# Pods
+*.orig
+xcshareddata
+._build
+.ssh-config
